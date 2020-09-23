@@ -12,7 +12,8 @@ class App extends React.Component{
   add = () => {
     // this.state.count += 1; : 이와 같이 state를 직접 변경하면 안됨 - setState()를 사용해야 함
     // setState()는 state값을 변경하면서 rendering을 다시 해줌
-    this.setState({count: this.state.count + 1});
+    // minus처럼 state를 변경하는 방법도 있지만, current함수를 사용하여 변경할 수 있음
+    this.setState(current =>({count: current.count + 1}));
   };
   minus = () => {
     this.setState({count: this.state.count - 1});
