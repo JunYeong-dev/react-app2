@@ -18,6 +18,9 @@ import PropTypes from "prop-types";
   4. getSnapshotBeforeUpdate()
   5. componentDidUpdate()
 
+  Unmounting - 페이지를 떠날 때
+  1. componentWillUnmount()
+
 */
 
 // react는 자동적으로 class component의 render method를 실행
